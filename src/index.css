@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes bg {
+    0% {
+        background-color: #f0f0f0;
+    }
+    100% {
+        background-color: #e1e1e1;
+    }
+}
+
+@keyframes jumpin {
+    0% {
+        transform: translateX(-150%)
+    }
+    70% {
+        transform: translateX(5%)
+    }
+    100% {
+        transform: none;
+    }
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.focus\:animate-background:focus {
+    animation: bg 1s cubic-bezier(0.4, 0, 0.6, 1) alternate infinite;
+}
+
+.animate-jumpin {
+    animation: jumpin 1s cubic-bezier(0.4, 0, 0.6, 1);
+}
+
+.animate-fadein {
+    animation: fadein 1s linear;
+}
