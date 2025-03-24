@@ -6,7 +6,7 @@ import Intro from './components/Result'
 const App = () => 
 {
     return <>
-    <Navbar></Navbar>
+    <Navbar/ >
     <BrowserRouter>
         <Routes>
             <Route path="/" element={<Main/>}></Route>
